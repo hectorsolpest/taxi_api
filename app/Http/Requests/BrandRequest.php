@@ -25,12 +25,4 @@ class BrandRequest extends FormRequest
             'name'=>'required|min:3|max:50'
         ];
     }
-    public function messages()
-    {
-        return [
-            'name.required'=>'El nombre es obligatorio',
-            'name.min'=>'El nombre debe tener al menos 3 caracteres',
-            'name.max'=>'El nombre debe tener menos de 50 caracteres',
-        ];
-    }
 }

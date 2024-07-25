@@ -28,15 +28,4 @@ class BaseRequest extends FormRequest
             'address'=>'required|min:5'
         ];
     }
-
-    public function messages(): array
-    {
-        return [
-            'name.required'=>'El nombre es obligatorio',
-            'phone.required'=>'El telefono es obligatorio',
-            'phone.number'=>'El telefono debe tener solo numeros',
-            'address.required'=>'La direccion es obligatoria',
-            'address.min'=>'La direccion debe tener al menos 10 caracteres',
-        ];
-    }
 }

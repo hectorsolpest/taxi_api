@@ -30,22 +30,4 @@ class JourneyRequest extends FormRequest
             'end_datetime'=>'required|date_format:Y-m-d H:i:s'
         ];
     }
-
-    public function messages(): array
-    {
-        return [
-            'origin.required' => 'El origen es requerido.',
-            'origin.min' => 'El origen debe tener al menos :min caracteres.',
-            'origin.max' => 'El origen no puede exceder :max caracteres.',
-            'destiny.required' => 'El destino es requerido.',
-            'destiny.min' => 'El destino debe tener al menos :min caracteres.',
-            'destiny.max' => 'El destino no puede exceder :max caracteres.',
-            'taxi_id.required' => 'El ID del taxi es requerido.',
-            'taxi_id.exists' => 'El ID del taxi proporcionado no existe.',
-            'start_datetime.required' => 'La fecha/hora de inicio es requerida.',
-            'start_datetime.date_format' => 'La fecha/hora de inicio debe tener el formato Y-m-d H:i:s.',
-            'end_datetime.required' => 'La fecha/hora de fin es requerida.',
-            'end_datetime.date_format' => 'La fecha/hora de fin debe tener el formato Y-m-d H:i:s.',
-        ];
-    }
 }
