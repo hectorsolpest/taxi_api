@@ -20,7 +20,7 @@ class TaxiFactory extends Factory
     {
         return [
             'plate_number'=>$this->faker->bothify('???-????'),
-            'year'=>$this->faker->year(['min' => 2010, 'max' => 2020]),
+            'year'=>$this->faker->year(),
             'brand_id'=>Brand::factory(),
             'base_id'=>Base::factory(),
         ];
